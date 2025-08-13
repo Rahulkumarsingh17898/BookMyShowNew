@@ -2,8 +2,7 @@ package com.rkstech.bookyourshow.models;
 
 import com.rkstech.bookyourshow.enums.BookingStatus;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -12,6 +11,9 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Booking extends BaseModel{
 
     @ManyToOne

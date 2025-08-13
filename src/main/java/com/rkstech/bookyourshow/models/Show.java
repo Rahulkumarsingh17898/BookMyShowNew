@@ -2,8 +2,7 @@ package com.rkstech.bookyourshow.models;
 
 import com.rkstech.bookyourshow.enums.MovieFeature;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,6 +12,9 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "shows") // show is a keyword in DB so change the table name
+@Builder(toBuilder = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class Show extends BaseModel{
 
     @ManyToOne

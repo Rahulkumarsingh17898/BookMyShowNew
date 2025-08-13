@@ -26,4 +26,7 @@ public class Movie extends BaseModel{
     @ElementCollection
     @Enumerated
     private List<MovieFeature> features = new ArrayList<>();
+
+//    @ElementCollection // bcz its a collection field so we have to add this annotation
+//    private List<String> genres = new ArrayList<>();
 }
